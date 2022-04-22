@@ -20,7 +20,7 @@ public class FoodProducts extends Product implements Discount {
         return price;
     }
 
-    public void applyDiscount() {
-        this.price = price - ((price/100) * discount);
+    public double applyDiscount() {
+        return this.price = price - ((price/100) * discount);
     }
 }

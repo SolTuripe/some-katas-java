@@ -10,14 +10,14 @@ public class BookProduct extends Product implements Discount {
 
     @Override
     public void setDiscount(Double discount) {
-        if(discount > 10.0) {
-            this.discount = 10; return;
-        }
         this.discount = discount;
     }
 
     @Override
-    public void applyDiscount() {
-        this.price = price - ((price/100) * discount);
+    public double applyDiscount() {
+        if(discount > 10){
+            return  this.price = price - ((price/100)*10);
+        }
+        return this.price = price - ((price/100)*discount);
     }
 }

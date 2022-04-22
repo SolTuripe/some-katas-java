@@ -68,12 +68,12 @@ public class ShoppingKataTest {
 
     @Test
     void BookProductDiscountCantBeHigherThan10() {
-        BookProduct book = new BookProduct("Maus", 19.99);
+        BookProduct book = new BookProduct("Maus", 19.00);
 
         book.setDiscount(50.0);
         book.applyDiscount();
 
-        assertThat(book.getPrice(), equalTo(17.991));
+        assertThat(book.getPrice(), equalTo(17.1));
     }
 
 }
