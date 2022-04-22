@@ -1,13 +1,11 @@
 package morekatas.morekatas.ShoppingKataTest;
 
-import morekatas.morekatas.ShoppingKata.FreeProducts;
-import morekatas.morekatas.ShoppingKata.Product;
-import morekatas.morekatas.ShoppingKata.FoodProducts;
+import morekatas.morekatas.ShoppingKata.*;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasProperty;
 
-import morekatas.morekatas.ShoppingKata.ShoppingCart;
 import org.junit.jupiter.api.Test;
 
 public class ShoppingKataTest {
@@ -66,7 +64,16 @@ public class ShoppingKataTest {
         foodProducts.applyDiscount();
 
         assertThat(shoppingCart.totalPrice(), equalTo(15.925));
+    }
 
+    @Test
+    void BookProductDiscountCantBeHigherThan10() {
+        BookProduct book = new BookProduct("Maus", 19.99);
+
+        book.setDiscount(50.0);
+        book.applyDiscount();
+
+        assertThat(book.getPrice(), equalTo(17.991));
     }
 
 }
