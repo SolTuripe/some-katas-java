@@ -7,6 +7,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasProperty;
 
+import morekatas.morekatas.ShoppingKata.ShoppingCart;
 import org.junit.jupiter.api.Test;
 
 public class ShoppingKataTest {
@@ -51,6 +52,20 @@ public class ShoppingKataTest {
 
     @Test
     void ShoppingCartHasProductsAndItsPriceIsTheSumOfPricesWithDiscounts() {
+        ShoppingCart shoppingCart = new ShoppingCart();
+        FoodProducts foodProducts = new FoodProducts("apples", 11.5);
+        FreeProducts freeProducts = new FreeProducts("avocado");
+        FoodProducts pasta = new FoodProducts("pasta", 10.0);
+
+        shoppingCart.addProduct(foodProducts);
+        shoppingCart.addProduct(freeProducts);
+        shoppingCart.addProduct(pasta);
+        pasta.setDiscount(50.0);
+        pasta.applyDiscount();
+        foodProducts.setDiscount(5.0);
+        foodProducts.applyDiscount();
+
+        assertThat(shoppingCart.totalPrice(), equalTo(15.925));
 
     }
 
