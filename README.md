@@ -1,2 +1,2 @@
 # Some-katas-java
-Work in progress
+Work in progress!
