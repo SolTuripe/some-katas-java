@@ -19,13 +19,13 @@ public class BowlingGame {
                 frameIndex += 2;
             } else {
                 score += rolls[frameIndex] + rolls[frameIndex + 1];
+                frameIndex += 2;
             }
-            frameIndex += 2;
         }
         return score;
     }
 
     private boolean isSpare(int frameIndex) {
-        return rolls[frameIndex] + rolls[frameIndex + 1] ==10;
+        return rolls[frameIndex] + rolls[frameIndex + 1] == 10;
     }
 }
