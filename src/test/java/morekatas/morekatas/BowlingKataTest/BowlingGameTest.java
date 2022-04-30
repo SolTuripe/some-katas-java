@@ -39,7 +39,12 @@ public class BowlingGameTest {
 
     @Test
     void OneStrikeTest() {
+        bowlingGame.roll(10);
+        bowlingGame.roll(3);
+        bowlingGame.roll(4);
+        rollMany(16, 0);
 
+        assertEquals(24, bowlingGame.score());
     }
 
     private void rollMany(int n, int pins) {
