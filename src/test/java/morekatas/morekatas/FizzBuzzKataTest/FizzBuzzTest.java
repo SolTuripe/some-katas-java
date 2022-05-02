@@ -34,4 +34,11 @@ public class FizzBuzzTest {
         String actual = fizzbuzz.convert(5);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void NumDivBy3And5RetFizzBuzz() {
+        String expected = "FizzBuzz";
+        String actual = fizzbuzz.convert(15);
+        assertEquals(expected, actual);
+    }
 }

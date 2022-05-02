@@ -3,11 +3,14 @@ package morekatas.morekatas.FizzBuzzKata;
 public class FizzBuzz {
 
     public String convert(int i) {
+        StringBuffer sb = new StringBuffer();
+
         if (i % 3 == 0) {
-            return "Fizz";
-        } else if (i % 5 == 0) {
-            return "Buzz";
+            sb.append("Fizz");
         }
-        return null;
+        if (i % 5 == 0) {
+            sb.append("Buzz");
+        }
+        return sb.toString();
     }
 }
