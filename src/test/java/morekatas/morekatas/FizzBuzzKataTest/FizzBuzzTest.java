@@ -17,28 +17,35 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void CanStartFizzBuzz() {
+    void canStartFizzBuzz() {
         assertNotNull(fizzbuzz);
     }
 
     @Test
-    void NumDivBy3RetFizz() {
+    void numDivBy3RetFizz() {
         String expected = "Fizz";
         String actual = fizzbuzz.convert(3);
         assertEquals(expected, actual);
     }
 
     @Test
-    void NumDivBy5RetBuzz() {
+    void numDivBy5RetBuzz() {
         String expected = "Buzz";
         String actual = fizzbuzz.convert(5);
         assertEquals(expected, actual);
     }
 
     @Test
-    void NumDivBy3And5RetFizzBuzz() {
+    void numDivByThreeAndFiveRetFizzBuzz() {
         String expected = "FizzBuzz";
         String actual = fizzbuzz.convert(15);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void numNotDivByThreeOrFiveRetNumAssString() {
+        String expected = "4";
+        String actual = fizzbuzz.convert(4);
         assertEquals(expected, actual);
     }
 }
