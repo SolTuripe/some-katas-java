@@ -3,7 +3,9 @@ package morekatas.morekatas.FizzBuzzKata;
 public class FizzBuzz {
 
     public String convert(int i) {
-        if (i % 5 == 0 && i % 3 == 0) {
+        //StringBuffer sb = new StringBuffer();
+
+        if (i % 3 == 0 && i % 5 == 0) {
             return "FizzBuzz";
         }
 
@@ -13,6 +15,6 @@ public class FizzBuzz {
         if (i % 5 == 0) {
             return "Buzz";
         }
-        return "i";
+        return Integer.toString(i);
     }
 }
