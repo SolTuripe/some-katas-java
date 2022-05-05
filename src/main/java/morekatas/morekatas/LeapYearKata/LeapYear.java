@@ -9,6 +9,9 @@ public class LeapYear {
     }
 
     public boolean check(){
+        if (year % 4 == 0) {
+            return true;
+        }
         return false;
     }
 }
