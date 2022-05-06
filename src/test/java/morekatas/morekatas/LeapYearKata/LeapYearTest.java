@@ -15,17 +15,17 @@ public class LeapYearTest {
             "1996, true"
     })*/
     @Test
-    void returnCorrectCheckForLeapYear() {
+    void sayFalseIfYearIsNotDivisibleBy4() {
         LeapYear leapYear = new LeapYear(1997);
 
         assertEquals(leapYear.check(), newYear(1997).check());
     }
 
     @Test
-    void returnCorrectCheckForLeapYear2() {
+    void sayTrueIfYearIsDivisibleBy4()  {
         LeapYear leapYear = new LeapYear(1996);
 
-        assertEquals(leapYear.check(), newYear(1997).check());
+        assertEquals(leapYear.check(), newYear(1996).check());
     }
 
     @Test
