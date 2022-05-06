@@ -25,7 +25,7 @@ public class LeapYearTest {
     void returnCorrectCheckForLeapYear2() {
         LeapYear leapYear = new LeapYear(1996);
 
-        assertEquals(leapYear.check(), newYear(1996).check());
+        assertEquals(leapYear.check(), newYear(1997).check());
     }
 
     private LeapYear newYear(int input) {
