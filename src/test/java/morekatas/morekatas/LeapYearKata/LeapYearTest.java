@@ -17,7 +17,11 @@ public class LeapYearTest {
             "4, true",
             "8, true",
             "1996, true",
+            "800, true",
+            "1200, true",
             "1600, true",
+            "300, false",
+            "500, false",
             "1800, false"
     })
 
