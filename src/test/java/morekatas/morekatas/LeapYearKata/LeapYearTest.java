@@ -9,29 +9,29 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LeapYearTest {
 
-   /* @ParameterizedTest
+   @ParameterizedTest
     @CsvSource({
+            "3, false",
+            "5, false",
             "1997, false",
-            "1996, true"
-    })*/
-    @Test
-    void sayFalseIfYearIsNotDivisibleBy4() {
-        LeapYear leapYear = new LeapYear(1997);
+            "4, true",
+            "8, true",
+            "1996, true",
+            "1600, true",
+            "1800, false"
+    })
 
-        assertEquals(leapYear.check(), newYear(1997).check());
+    void returnCorrectCheckForLeapYear(int input, boolean output) {
+        assertEquals(output, newYear(input).check());
     }
 
+    /*
     @Test
-    void sayTrueIfYearIsDivisibleBy4()  {
-        LeapYear leapYear = new LeapYear(1996);
+    void sayTrueIfYearIsDivisibleBy400()  {
+        LeapYear leapYear = new LeapYear(1600);
 
-        assertEquals(leapYear.check(), newYear(1996).check());
-    }
-
-    @Test
-    void returnCorrectCheckForLeapYear3() {
-
-    }
+        assertEquals(leapYear.check(), newYear(1600).check());
+    }*/
 
     private LeapYear newYear(int input) {
         return new LeapYear(input);
