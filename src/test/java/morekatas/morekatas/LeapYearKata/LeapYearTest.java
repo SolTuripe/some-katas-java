@@ -28,6 +28,11 @@ public class LeapYearTest {
         assertEquals(leapYear.check(), newYear(1997).check());
     }
 
+    @Test
+    void returnCorrectCheckForLeapYear3() {
+
+    }
+
     private LeapYear newYear(int input) {
         return new LeapYear(input);
     }
