@@ -1,4 +1,5 @@
 package morekatas.morekatas.SheldonGame;
 
-public class Rock {
+public abstract class Rock implements Gesture {
+
 }

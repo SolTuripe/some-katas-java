@@ -1,12 +1,6 @@
 package morekatas.morekatas.SheldonGame;
 
-public abstract class Gesture {
-    protected String name;
+public interface Gesture {
+     public void getName();
 
-    public Gesture() {
-    }
-
-    public String getName() {
-        return this.name;
-    }
 }
