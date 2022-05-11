@@ -34,6 +34,16 @@ Run the tests to see them pass!
 
 ## 2 - FizzBuzz Kata 🔠
 
+Write a program/function that, as a parameter, receives a number from 1 to 100 and returns:
+* For multiples of three, return a string: "Fizz" instead of the number
+* For multiples of five, return a string: "Buzz" instead of the number
+* For numbers that are multiples of three and five, return a string: "FizzBuzz" instead of the number
+* Of course... for numbers that are not multiples of three and five, it must return the same number
+
+<p align="center">
+<img src="./src/main/java/assets/fizzbuzzTest.png" width=65%>
+</p>
+
 ## 3 - Leap Years Kata 📅
 
 ## 4 - Shopping Kata 🛒
