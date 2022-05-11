@@ -28,6 +28,10 @@ Run the tests to see them pass!
 * If the player knocks down all 10 pins in both throwing of the turn, they make a spare. The score for this turn is 10 plus the number of pins knocked down in the next throw
 * If in the last turn a player makes a strike, he is allowed to throw the extra balls to complete the turn. However, it is not allowed to throw more than 3 balls in this turn
 
+<p align="center">
+<img src="./src/main/java/assets/bowlingTest.png" width=65%>
+</p>
+
 ## 2 - FizzBuzz Kata 🔠
 
 ## 3 - Leap Years Kata 📅
