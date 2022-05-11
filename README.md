@@ -56,3 +56,16 @@ Write a program/function that, as a parameter, receives a number from 1 to 100 a
 </p>
 
 ## 4 - Shopping Kata 🛒
+
+* All products must have a name and price
+* The price of a free product is always 0
+* A discount can be applied to food products
+* The price of a product without discount is the product' original price
+* The price of a product with a discount is the price with the applied discount
+* The shopping kart contains a certain number of products, which can be zero
+* The total cost of the kart is the sum of the products prices with discounts applied
+* Book products also have authorship and description, and a maximum of a 10% discount can be applied
+
+<p align="center">
+<img src="./src/main/java/assets/shoppingTest.png" width=65%>
+</p>
