@@ -21,4 +21,9 @@ public class SnakeAndLeaderTest {
         assertEquals(0, players.get(0).boardPosition());
         assertEquals(0, players.get(1).boardPosition());
     }
+
+    @Test
+    void player1StartsAndAlternatesWithPlayer2() {
+
+    }
 }
