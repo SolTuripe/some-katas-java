@@ -18,9 +18,9 @@ public class WrapperTest {
     void isSidesAreGreaterThanZeroWrapCalculatesTheRibbonLength() throws Exception {
         Wrapper wrapper = new Wrapper();
 
-        double sut = wrapper.wrap(1, 3, 1);
-        double sut1 = wrapper.wrap(13, 13, 13);
-        double sut2 = wrapper.wrap(17, 32, 11);
+        Integer sut = wrapper.wrap(1, 3, 1);
+        Integer sut1 = wrapper.wrap(13, 13, 13);
+        Integer sut2 = wrapper.wrap(17, 32, 11);
 
         assertEquals(32, sut);
         assertEquals(124, sut1);
