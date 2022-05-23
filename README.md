@@ -44,6 +44,8 @@ Write a program/function that, as a parameter, receives a number from 1 to 100 a
 <img src="./src/main/java/assets/fizzbuzzTest.png" width=65%>
 </p>
 
+## 3 - Happy Birthday Exercise 🎂
+
 ## 3 - Leap Years Kata 📅
 
 * All years divisible by 400 ARE leap years (so, for example, 2000 was indeed a leap year)
