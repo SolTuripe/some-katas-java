@@ -46,6 +46,10 @@ Write a program/function that, as a parameter, receives a number from 1 to 100 a
 
 ## 3 - Happy Birthday Exercise 🎂
 
+* It's your best friend's birthday! You already bought a box for the present. Now you want to pack the present in the box. You want to decorate the box with a ribbon and a bow. But how much cm of ribbon do you need?
+* Write the method wrap that calculates that!
+* A box has a height, a width and a length (in cm). The ribbon is crossed on the side with the largest area. Opposite this side (also the side with the largest area) the loop is bound, calculate with 20 cm more tape.
+
 ## 3 - Leap Years Kata 📅
 
 * All years divisible by 400 ARE leap years (so, for example, 2000 was indeed a leap year)
