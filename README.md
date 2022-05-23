@@ -50,7 +50,17 @@ Write a program/function that, as a parameter, receives a number from 1 to 100 a
 * Write the method wrap that calculates that!
 * A box has a height, a width and a length (in cm). The ribbon is crossed on the side with the largest area. Opposite this side (also the side with the largest area) the loop is bound, calculate with 20 cm more tape.
 
-## 3 - Leap Years Kata 📅
+```
+wrap(17,32,11) => 162
+wrap(13,13,13) => 124
+wrap(1,3,1) => 32
+```
+
+<p align="center">
+<img src="./src/main/java/assets/wrapper.png" width=65%>
+</p>
+
+## 4 - Leap Years Kata 📅
 
 * All years divisible by 400 ARE leap years (so, for example, 2000 was indeed a leap year)
 * All years divisible by 100 but not by 400 are NOT leap years (so, for example, 1700, 1800, and 1900 were NOT leap years, NOR will 2100 be a leap year)
@@ -61,7 +71,7 @@ Write a program/function that, as a parameter, receives a number from 1 to 100 a
 <img src="./src/main/java/assets/leapyearTest.png" width=65%>
 </p>
 
-## 4 - Shopping Kata 🛒
+## 5 - Shopping Kata 🛒
 
 * All products must have a name and price
 * The price of a free product is always 0
