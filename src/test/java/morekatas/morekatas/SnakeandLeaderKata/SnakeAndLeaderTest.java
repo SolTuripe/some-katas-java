@@ -24,6 +24,15 @@ public class SnakeAndLeaderTest {
 
     @Test
     void player1StartsAndAlternatesWithPlayer2() {
+        /*mockDices = mock(Dices.class);
+        Game game = new Game(2,mockDices);
 
+        when(mockDices.equalNumbers()).thenReturn(false);
+
+        assertEquals(0,game.getTurn());
+        game.play();
+        assertEquals(1,game.getTurn());
+        game.play();
+        assertEquals(0,game.getTurn());*/
     }
 }
